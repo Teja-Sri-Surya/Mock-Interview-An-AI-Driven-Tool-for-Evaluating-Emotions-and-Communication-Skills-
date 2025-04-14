@@ -1,0 +1,25 @@
+{% extends 'u_base.html' %}
+{% block content %}
+<h5><font size="" color="blue">{{msg}}</font></h4>
+<center>
+<h2>Exams</h2>
+<br>
+
+<center>
+
+ 
+<table id="tab" width="70%">
+<tr><th>#<th>Subject<th>
+{% for d1 in data %}
+<tr><td>{{forloop.counter}}<td>{{d1.subject}}<td width="10%">
+<form method="post" action="/examstart/">
+
+ {% csrf_token %}			
+<input type="hidden" name="sub" value="{{d1.subject}}">
+	<input type="submit" value="Exam Start" class="form-control" >
+</form>
+{% endfor %}
+</table>
+
+
+{% endblock %}
