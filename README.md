@@ -136,5 +136,5 @@ You are free to use, modify, and distribute it with attribution.
 
 ## 👤 Author & Contributions
 
-Built by [Your Name] – contributions are welcome!  
+Built by Ambati Teja Sri Surya – contributions are welcome!  
 Fork the repo and open a pull request to get involved.
